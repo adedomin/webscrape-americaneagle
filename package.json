@@ -7,7 +7,6 @@
     "americaneagle": "bin/american-eagle.js"
   },
   "dependencies": {
-    "perfdata-parser": "^2.0.0",
     "puppeteer": "^0.10.2",
     "yargs": "^8.0.2"
   },
