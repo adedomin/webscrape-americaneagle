@@ -35,14 +35,6 @@ camelcase@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
-casper@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/casper/-/casper-0.1.1.tgz#a9eacf26986adadc2dbc7171b6e7ceb48667a0f7"
-
-casperjs@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/casperjs/-/casperjs-1.1.4.tgz#eb01f4ed85ac520a8f4d932b4daa74d3e77bc746"
-
 cliui@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-3.2.0.tgz#120601537a916d29940f934da3b48d585a39213d"
@@ -370,6 +362,10 @@ path-type@^2.0.0:
 pend@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
+
+perfdata-parser@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/perfdata-parser/-/perfdata-parser-2.0.1.tgz#5c660309850ce86b848b03181c6fab76954b557f"
 
 pify@^2.0.0:
   version "2.3.0"

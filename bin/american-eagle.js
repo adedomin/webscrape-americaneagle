@@ -116,7 +116,11 @@ if (readFromFile) {
 
 var nagios
 if (argv.nagios) {
-    nagios = {}
+    nagios = {
+        warn: argv.warn || 0,
+        crit: argv.crit || 0,
+        delta: argv.delta || '',
+    }
     if (argv.warn) {
         if (argv.warn.charAt(0) == '$')
             argv.warn = argv.warn.split(1)
@@ -132,8 +136,6 @@ if (argv.nagios) {
         console.error('warning value is not numeric.')
         process.exit(1)
     }
-
-    nagios.delta = argv.delta
 }
 
 if (argv.pretty) argv.pretty = 2

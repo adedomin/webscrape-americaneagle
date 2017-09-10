@@ -14,11 +14,17 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-var americanEagle = require('./lib/american-eagle')
+var americanEagle = require('./lib/american-eagle'),
+    nagiosOutput = require('./lib/nagios')
 
 module.exports = function(credentials, nagios, pretty) {
     return americanEagle(credentials.username, credentials.password).then(accounts => {
         if (!nagios)
             console.log(JSON.stringify(accounts, null, pretty))
+        else {
+            var out = nagiosOutput(accounts, nagios)
+            console.log(out.msg)
+            process.exit(out.status)
+        }
     })
 }
