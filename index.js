@@ -26,5 +26,13 @@ module.exports = function(credentials, nagios, pretty) {
             console.log(out.msg)
             process.exit(out.status)
         }
+    }).catch(() => {
+        if (!nagios) {
+            console.log('[]')
+        }
+        else {
+            console.log('Account Balances UNKN')
+        }
+        process.exit(3)
     })
 }
